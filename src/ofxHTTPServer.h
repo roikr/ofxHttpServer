@@ -8,20 +8,20 @@
 #ifndef OFXHTTPSERVER_H_
 #define OFXHTTPSERVER_H_
 
-#include <cstdarg>
+// #include <cstdarg>
 
-#if defined( __WIN32__ ) || defined( _WIN32 )
-   #define MHD_PLATFORM_H
-   #include <ws2tcpip.h>
-   #include <stdint.h>
-#else
-   #include <sys/socket.h>
-#endif
+// #if defined( __WIN32__ ) || defined( _WIN32 )
+//    #define MHD_PLATFORM_H
+//    #include <ws2tcpip.h>
+//    #include <stdint.h>
+// #else
+//    #include <sys/socket.h>
+// #endif
 
-#include "microhttpd.h"
 #include "Poco/Condition.h"
 #include <ofMain.h>
 #include <map>
+ #include <microhttpd.h>
 
 class ofxHTTPServerResponse{
 public:

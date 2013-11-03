@@ -1,0 +1,2 @@
+for linux you have to install libmicrohttpd-dev:
+sudo apt-get install libmicrohttp-dev
